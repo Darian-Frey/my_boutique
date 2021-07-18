@@ -40,7 +40,7 @@ body {
 
 .btn-outline-black {
     background: white;
-    color: black !important;
+    color: black !important; /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
 
@@ -74,16 +74,16 @@ body {
 }
 
 .overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: white;
-    z-index: -1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
 }
 
-a.categorys-badge > span.badge:hover {
+a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
 }
@@ -96,7 +96,9 @@ a.categorys-badge > span.badge:hover {
     right: 10px;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 
@@ -124,13 +126,13 @@ a.categorys-badge > span.badge:hover {
     }
 }
 
-/* pad the a bit when navbar is collapsed on mpbile */
+/* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
     }
 
     body {
-        height: calc(100vh - 166px);
+        height: calc(100vh - 116px);
     }
 }
