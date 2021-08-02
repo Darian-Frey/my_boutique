@@ -22,5 +22,7 @@
    },
    "workbench.colorTheme": "Visual Studio Dark",
 "editor.defaultFormatter": "HookyQR.beautify",
-"editor.autoSave": "on"
+"editor.autoSave": "on",
+"editor.fontSize": 12,
+"terminal.integrated.letterSpacing": 1
 }
